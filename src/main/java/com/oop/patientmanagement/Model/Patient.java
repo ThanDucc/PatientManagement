@@ -1,40 +1,27 @@
 package com.oop.patientmanagement.Model;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class Patient {
-    private PatientInfo patient;
-    private ArrayList<Disease> diseasesList = new ArrayList<>();
-    private String date;
+    private PatientInfo patientInfo;
+    private PatientExamination patientExamination;
 
-    public Patient(PatientInfo patient, ArrayList<Disease> diseasesList, String date) {
-        this.patient = patient;
-        this.diseasesList = diseasesList;
-        this.date = date;
+    public Patient(PatientInfo patientInfo, PatientExamination patientExamination) {
+        this.patientInfo = patientInfo;
+        this.patientExamination = patientExamination;
     }
 
-    public PatientInfo getPatient() {
-        return patient;
+    public PatientInfo getPatientInfo() {
+        return patientInfo;
     }
 
-    public void setPatient(PatientInfo patientInfor) {
-        this.patient = patientInfor;
+    public void setPatientInfo(PatientInfo patientInfo) {
+        this.patientInfo = patientInfo;
     }
 
-    public ArrayList<Disease> getDiseasesList() {
-        return diseasesList;
+    public PatientExamination getPatientExamination() {
+        return patientExamination;
     }
 
-    public void setDiseasesList(ArrayList<Disease> diseasesList) {
-        this.diseasesList = diseasesList;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
+    public void setPatientExamination(PatientExamination patientExamination) {
+        this.patientExamination = patientExamination;
     }
 }

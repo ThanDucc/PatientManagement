@@ -2,12 +2,12 @@ package com.oop.patientmanagement.Model;
 
 public class Disease {
     private String diseaseName;
-    private String description;
+    private String advice;
     private String medicine;
 
-    public Disease(String diseaseName, String description, String medicine) {
+    public Disease(String diseaseName, String medicine, String advice) {
         this.diseaseName = diseaseName;
-        this.description = description;
+        this.advice = advice;
         this.medicine = medicine;
     }
 
@@ -19,12 +19,12 @@ public class Disease {
         this.diseaseName = diseaseName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAdvice() {
+        return advice;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAdvice(String advice) {
+        this.advice = advice;
     }
 
     public String getMedicine() {

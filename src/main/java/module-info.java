@@ -1,8 +1,7 @@
 module com.oop.patientmanagement {
     requires javafx.controls;
     requires javafx.fxml;
-            
-                            
+
     opens com.oop.patientmanagement to javafx.fxml;
     exports com.oop.patientmanagement;
     exports com.oop.patientmanagement.Model;

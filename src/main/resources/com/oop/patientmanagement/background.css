@@ -1,5 +1,5 @@
 .body{
-    -fx-background-image: url(background.png);
+    -fx-background-image: url(background.jpeg);
 }
 
 .layer1bgColor{
@@ -18,8 +18,3 @@
     -fx-border-color: #33B0D0;
 }
 
-
-.scroll-pane {
-    -fx-background: #2D2A2A;
-    -fx-border-color: #2D2A2A;
-}

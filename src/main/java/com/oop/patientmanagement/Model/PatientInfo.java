@@ -2,15 +2,37 @@ package com.oop.patientmanagement.Model;
 
 public class PatientInfo {
     private String name;
-    private int age;
+    private String dateOfBirth;
     private String citizenID;
     private String gender;
+    private String address;
 
-    public PatientInfo(String name, int age, String citizenID, String gender) {
+    public PatientInfo() {
+
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public PatientInfo(String name, String dateOfBirth, String citizenID, String gender, String address) {
         this.name = name;
-        this.age = age;
+        this.dateOfBirth = dateOfBirth;
         this.citizenID = citizenID;
         this.gender = gender;
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getName() {
@@ -19,14 +41,6 @@ public class PatientInfo {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getCitizenID() {
